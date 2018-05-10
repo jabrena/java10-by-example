@@ -6,7 +6,7 @@
     <title>Java 10, 11 & Beyond</title>
     <link rel="shortcut icon" href="./nanoduke.ico" />
 
-    <meta name="description" content="A web presentation about Profiling for Microservices">
+    <meta name="description" content="Java 10, 11 & Beyond">
     <meta name="author" content="Juan Antonio Breña Moral">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,29 +35,40 @@
                         <li><i>The Challenge of Complexity Many things can put a project off course: bureaucracy, unclear objectives, and lack of resources, to name a few. But it is the approach to design that largely determines how complex software can become.</i></li>
                     </ol>
                     <p>
-                    - Eric Evans
+                    - Eric Evans (Domain Driving Design)
                     </p>
                 </section>
+                <section>
+                    <h2>Quotes</h2>
+                    <ol>
+                        <li><i>Fact 1: The most important factor in software work is not the tools and techniques used by the programmers but rather the quality of the programmers themselves.</i></li>
+                    </ol>
+                    <p>
+                    -Robert L. Glass (Object Thinking)
+                    </p>
+                </section>
+
             </section>
 
             <section data-background="./Images/logo.jpg">
                 <section>
                     <h2>Agenda</h2>
                     <ol>
+                        <li>What is Modern Java?</li>
                         <li>Java 10 features</li>
                         <li>Java 11 features</li>
-                        <li>What is Modern Java?</li>
-                        <li>References</li>
+                        <li>OpenJDK projects</li>
                         <li>Homework</li>
+                        <li>References</li>
                         <li>Q&A</li>
                     </ol>
                 </section>
                 <section>
                     <h2>Educational Goals</h2>
                     <ol>
+                        <li>Explain the "Modern Java" philosophy</li>
                         <li>Show features included with Java 10</li>
                         <li>Show features that will appear in Java 11</li>
-                        <li>Explain the "Modern Java" philosophy</li>
                         <li>What happen in the OpenJDK projects?</li>
                     </ol>
                 </section>
@@ -72,6 +83,7 @@
                     <ol>
                         <li>Java Lifecycle</li>
                         <li>Java Architecture</li>
+                        <li>Java & Containers</li>
                     </ol>
                 </section>
 
@@ -84,8 +96,63 @@
                     <h2 style="color:black">Java Architecture</h2>
                     <img data-src="./Images/JVM-Architecture2.png" width="80%">
                 </section>
-            </section>
 
+                <section>
+                    <h2 style="color:black">Java & Containers</h2>
+                    <img data-src="./Images/VM_vs_Container.png">
+                </section>
+            </section>
+            <section data-background="./Images/java-bg1.jpg">
+              <section>
+                  <h2 style="color:black">What is modern Java?</h2>
+                  <ol style="color:black">
+                      <li>Definition</li>
+                      <li>JVM Adoption</li>
+                      <li>Spring Adoption</li>
+                      <li>Spring Boot Adoption</li>
+                      <li>Lombok</li>
+                  </ol>
+              </section>
+              <section>
+                  <h2 style="color:black">What is modern Java?</h2>
+                  <h3 style="color:black">Definition</h3>
+                  <p style="color:black">
+                      <strong><i>A legacy system, is a system with no tests</i></strong>
+                  </p>
+              </section>
+                <section>
+                    <h2 style="color:black">What is modern Java?</h2>
+                    <h3 style="color:black">JVM Adoption</h3>
+                    <p>
+                        <img src="./Images/javaAdoption2018.png" />
+                    </p>
+                </section>
+                <section>
+                    <h2 style="color:black">What is modern Java?</h2>
+                    <h3 style="color:black">Java Frameworks market share</h3>
+                    <p>
+                        <img src="./Images/javaFrameworks2018.png" />
+                    </p>
+                </section>
+                <section>
+                    <h2 style="color:black">What is modern Java?</h2>
+                    <h3 style="color:black">Spring Boot adoption</h3>
+                    <p>
+                        <img src="./Images/springAdoption2018.png" />
+                    </p>
+                </section>
+                <section>
+                    <h2 style="color:black">What is modern Java?</h2>
+                    <h3 style="color:black">Lombok</h3>
+                    <p style="color:black">
+                      Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java.
+                      Never write another getter or equals method again.
+                    </p>
+                    <p>
+                        <a style="color:black" href="https://projectlombok.org/" target="_blank">https://projectlombok.org/</a>
+                    </p>
+                </section>
+            </section>
             <section data-background="./Images/jdk10.gif"
                      data-background-repeat="repeat"
                      data-background-size="200px"
@@ -117,24 +184,24 @@
               </section>
             </section>
             <section data-background="./Images/java-bg1.jpg">
-                <section>
-                    <h2 style="color:black">What is modern Java?</h2>
-                    <p>
-                        <img src="./Images/javaAdoption2018.png" />
-                    </p>
-                </section>
-                <section>
-                    <h2 style="color:black">What is modern Java?</h2>
-                    <p>
-                        <img src="./Images/javaFrameworks2018.png" />
-                    </p>
-                </section>
-                <section>
-                    <h2 style="color:black">What is modern Java?</h2>
-                    <p>
-                        <img src="./Images/springAdoption2018.png" />
-                    </p>
-                </section>
+              <section>
+                  <h2 style="color:black">OpenJDK projects</h2>
+                  <ol style="color:black">
+                      <li><a style="color:black" href="http://openjdk.java.net/projects/amber/" target="_blank">Amber</a></li>
+                      <li><a style="color:black" href="http://openjdk.java.net/projects/metropolis/" target="_blank">Metropolis</a></li>
+                      <li><a style="color:black" href="http://openjdk.java.net/projects/panama/" target="_blank">Panama</a></li>
+                      <li><a style="color:black" href="http://openjdk.java.net/projects/valhalla/" target="_blank">Valhalla</a></li>
+                      <li><a style="color:black" href="https://www.graalvm.org/" target="_blank">Graal VM</a></li>
+                      <li><a style="color:black" href="https://adoptopenjdk.net/" target="_blank">Adopt OpenJDK</a></li>
+                  </ol>
+              </section>
+            </section>
+            <section data-background="">
+                <h2>Homework</h2>
+                <ol>
+                    <li>How to install multiple JVM?</li>
+                    <li>Did you review top libraries on <a href="https://mvnrepository.com/" target="_blank">Maven repository</a>?</li>
+                </ol>
             </section>
             <section>
               <section data-background="./Images/books.jpg">
